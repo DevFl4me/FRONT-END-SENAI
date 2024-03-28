@@ -1,0 +1,106 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+header, footer{
+    width: 100%;
+    height: 60px;
+    background-color: var(--preto);
+    display: flex;justify-content: center;
+    align-items: center;
+}
+:root{
+    --corPrimaria: rgba(124, 124, 124, 0.699);
+    --branco: rgb(255, 255, 255);
+    --preto:rgb(26, 26, 26);
+    --cortd:rgb(207, 207, 207);
+    --corHover:rgba(137, 146, 148, 0.596);
+    --colorActive:rgba(137, 146, 148, 0.596);
+    --colorFocus:rgb(184, 184, 184);
+}
+h1{
+    color: var(--branco);
+
+}
+#tabelaExcel{
+    width: 400px;
+    margin: 30px;
+    border-collapse:collapse;
+}
+th, td{
+    border: 1px solid var(--preto);
+    padding: 5px;
+    user-select: none;
+    
+}
+th{
+    background-color: var(--corPrimaria);
+    color: var(--branco);
+}
+td{
+    background-color: var(--cortd);
+}
+th:hover{
+    background-color: var(--corHover);
+    cursor: pointer;
+}
+td:active{
+    background-color: var(--colorActive);
+    border:solid var(--preto) 1px;
+}
+td:hover{
+    cursor:cell;
+}
+input{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s;
+    background-color: var(--branco);
+}
+input:focus{
+    transition: 1s;
+    background-color: var(--colorFocus);
+    color: var(--branco);
+}
+#table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+th:empty{
+    background-color: transparent;
+    border: none;
+    cursor: auto;   
+}
+#tabelaProdutos{
+    width: 600px;
+    height: 250px;
+    border-collapse: collapse;
+    align-items: center;
+}
+td{
+    text-align: center;
+}
+thead{
+    position: sticky;
+    top: 40px;
+}
+#apenasScroll{
+    width: -1px;
+    height: 1000px;
+
+}
+header{
+    position: fixed;
+    top: -1px;
+}
+#tableProducts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+main{
+    padding-top: 60px;
+}

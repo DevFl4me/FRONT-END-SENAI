@@ -1,0 +1,114 @@
+
+@font-face {
+    font-family:Gameboy;
+    src: url(../fonts/early_gameboy/Early\ GameBoy.ttf);
+}
+ 
+@keyframes mudaCor {
+    0%{
+   
+        color:var(--preto)
+    }
+    25%{
+        color: rgb(255, 189, 233);
+    }
+    50%{
+        color: rgba(255, 0, 212, 0.836);
+    }
+    100%{
+        color:var(--preto);
+    }
+}
+@keyframes h3color {
+    0%{
+        color: var(--preto);
+    }
+    25%{
+        color: blueviolet;
+    }
+    50%{
+        color: rgb(204, 0, 255);
+    }
+    100%{
+        color: var(--preto);
+    }
+}
+
+:root{
+    --corPrimaria: rgb(42, 150, 0);
+    --corSecundaria:rgb(35,35,35);
+    --branco:rgb(237,237,237);
+    --preto:rgb(18,18,18);
+    --fontPrimaria:GameBoy;
+    --fontSecundaria:'Trebuchet';
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: var(--fontPrimaria);
+}
+
+#page{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--preto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main{
+    width: 70%;
+    height: 80%;
+    background-color: var(--branco);
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+#efeito , #formulario{
+    width: 50%;
+    height: 100vh;
+    background-color: rgba(252, 198, 245, 0);
+}
+#efeito{
+    background-image: url(../images/terry-lee-AeSfOYvaQe4-unsplash.jpg);
+    background-size: cover;
+    
+}   
+#banner{
+    width: 100%;
+    height: 100%;
+    
+}
+h3{
+    animation-name: h3color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#formulario form{
+    animation-name: mudaCor;
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;   
+}
+input{
+    width: 70%;
+    padding: 5px;
+    border:none;
+    border-bottom: solid rgb(0, 0, 0);
+    cursor: text;
+ 
+}
+button{
+    width: 135px;
+    padding: 10px;
+    border: none;
+    border:solid rgb(0, 0, 0);
+    cursor:pointer;
+}
+a{
+    text-decoration: none;
+    color:black;
+}

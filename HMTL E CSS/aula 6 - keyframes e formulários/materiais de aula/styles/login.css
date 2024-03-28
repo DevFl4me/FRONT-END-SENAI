@@ -1,0 +1,35 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#page{
+    background-color: black;
+    background-image: url(../images/backgroundImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+main{
+    justify-content: right;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+#efeito{
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+}
+#formulario form{ 
+   padding-top: 30px; 
+
+}
+
+label{
+    padding-top: 50px;
+}
+input{
+    width: 300px;
+}
