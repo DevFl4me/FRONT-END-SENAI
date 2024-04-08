@@ -1,0 +1,9 @@
+.navbar-brand{
+    color: aliceblue;
+}
+.nav-link{
+    color: white;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color:white;
+}
