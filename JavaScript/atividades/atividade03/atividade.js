@@ -7,9 +7,11 @@
 // Se a idade informada for maior ou igual a 60, exibir a mensagem “Idoso”.
 // Fique à vontade para utilizar qualquer uma das funções aprendidas para exibição de dados para o usuário.
 
-var idade
 
+// ATIVIDADE
 function FaixaEtaria(){
+
+var idade
 
 window.alert("Bem-vindo ao algoritmo que identifica faixa etária");
 
@@ -30,4 +32,58 @@ else if(idade>=60){
 }
 }
 
+// IF ELSE
+function ifElse(){
+    if(true){  //se colocar false ele vai para o Else
+        console.log("Estou no If")
+    }else{
+        console.log("Estou no Else")
+    }
+
+    // VERIFICA IDADE
+    // INPUT - idade
+    // OUTPUT - resposta
+    // Verifica a idade do usuário se é mior de idade
+    window.alert("Seja bem vindo(a)");
+    let idade = Number(window.prompt("Insira sua idade:"));
+
+    if(idade>=18){
+        // entrar no site
+        window.alert("Aproveite nosso sistema!")
+        let resposta = document.querySelector("#resposta")
+        resposta.innerHTML=`${idade}`;
+    }else{
+        // não entrar no site  
+        window.alert("Idade inválida!");
+        location.href ="https://www.google.com";
+    }
+}
+
+// SWITCH CASE
+function switchCase(){
+    window.alert("Brasileiras");
+    let opcao = window.prompt("Escolha a sua opção:A - Pen drive. B- Bola. C - Chocolate");
+    
+    switch(opcao){
+        case "B":
+            window.alert("Você comprou um Pen Drive");
+            break;
+        case "B":
+            window.alert("Você comprou uma Bola");
+            break;
+        case "C":
+            window.alert("Você comprou um Chocolate");
+            break; 
+        default:
+            window("Opção Inválida");                   
+    }
+}
+
  
+
+
+
+
+
+
+
