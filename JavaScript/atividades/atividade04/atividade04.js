@@ -25,8 +25,26 @@ function exercicio2(){
     window.alert("Bem vindo a loja Brasileiras!");
     window.alert("Selecione os itens que deseja comprar!");
     // input opção escolhida
-    opcao = Number(window.prompt("2-Pendrive\n1-Açai\n3-KitKat\n4-Celular"));
+    opcao = Number(window.prompt("2-Pendrive\n1-Açai\n3-KitKat\n4-Celular\n5-Sair"));
 
-    while()
+    while(opcao!=5){
+        switch(opcao){
+            case 1:
+                window.alert("Pendrive foi adicionado com sucesso ao carrinho");
+            break;
+                case 2: 
+                window.alert("Açai foi adicionado com sucesso ao carrinho");
+            break;
+                case 3: 
+                window.alert("KitKat foi adicionado com sucesso ao carrinho");
+            break;
+                case 4:
+                window.alert("KitKat foi adicionado com sucesso ao carrinho");
+            break;
+                case 5:
+                window.alert("Saindo do menu de compra!"); 
+            break;     
 
+        }
+    }
 }
