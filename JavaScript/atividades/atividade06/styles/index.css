@@ -1,0 +1,14 @@
+:root{
+    --corPrimaria:rgb(0, 170, 255);
+    --corSecundaria: rgb(68, 0, 128);
+}
+header{
+    background-color: var(--corPrimaria);
+    color: aliceblue!important;
+}
+.navbar-brand{
+    color: white;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: white;
+}
