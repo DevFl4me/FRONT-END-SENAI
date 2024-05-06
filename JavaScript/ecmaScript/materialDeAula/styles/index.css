@@ -9,3 +9,7 @@
     background-color: rgb(144, 176, 235);
     border-radius: 10px;
 }
+#textArea{
+    border: solid 5px rgba(0, 0, 0, 0.603);
+    box-shadow: 20px 20px 20px rgb(148, 148, 148);
+}
