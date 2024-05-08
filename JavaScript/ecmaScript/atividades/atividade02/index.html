@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Atividade 2</title>
+</head>
+<body>
+<section id="container">
+    <!-- HEADER AONDE MOSTRA O NOME DO PERSONAGEM E IMAGEM -->
+    <header id="header-container">
+        <h1>Personagem: Donatello</h1><div id="img"></div>
+    </header>   
+     <!--TITULO ATRIBUTOS  -->
+    <section id="title-atributos">
+        <h1>ATRIBUTOS:</h1>
+    </section>
+    <!-- LADO ESQUERDO - INSERIR ATRIBUTOS -->
+    <section id="container-atributos">
+        <aside id="lado-esquerdo">
+            <button type="button" class="buttons-insert" id="btn-+vida" onclick="adicionarVida()">+ VIDA</button>
+            <button type="button" class="buttons-insert" id="btn-+dano" onclick="">+ DANO</button>
+            <button type="button" class="buttons-insert" id="btn-+armadura" onclick="">+ ARMADURA</button>
+            <button type="button" class="buttons-insert" id="btn-+agilidade" onclick="">+ AGILIDADE</button>
+        </aside>
+        <!-- LADO DIREITO - RECEBER ATRIBUTOS -->
+        <aside id="lado-direito">
+            <button type="button" class="buttons-insert" id="btn--vida">- VIDA</button>
+            <button type="button" class="buttons-insert" id="btn--dano">- DANO</button>
+            <button type="button" class="buttons-insert" id="btn--armadura">- ARMADURA</button>
+            <button type="button" class="buttons-insert" id="btn--agilidade">- AGILIDADE</button>
+        </aside>
+    </section>
+        <!-- ATRIBUTOS -->
+        <section id="container-resposta">
+            <div class="results">❤️ : <label id="resultado-vida">0</label></div>
+            <div class="results">⚔️ : <label id="resultado-dano">0</label></div>
+            <div class="results">🛡️ : <label id="resultado-armadura">0</label></div>
+            <div class="results">🦶 : <label id="resultado-agilidade">0</label></div>
+        </section>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
