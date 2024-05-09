@@ -19,10 +19,10 @@ function somarVida(vidaRecebida){
 
     let curar = document.querySelector("#btn-+vida");
 
-        donatello.vida+=vidaRecebida; 
+        curar = donatello.vida+=vidaRecebida; 
 
     resultado = document.querySelector("#resultado-vida");
-    resultado.innerHtml=`${vida}`
+    resultado.innerHtml=`${curar}`
 
 
 }
