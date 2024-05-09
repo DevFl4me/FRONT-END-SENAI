@@ -77,8 +77,21 @@ function objectEntries(){
     console.log(mapResultado);
 };
 
-function promisses(){
-    
+function Promisses(){
+    var promessa = new Promisses((resolve,reject)=>{
+        let usuario = "ADM";
+        
+        if(usuario == "ADM"){
+            resolve("o usuario é administrador");
+        }else{
+            reject("O usuario não é adm!");
+        }
+
+    });
+
+    promessa.then((resultado)=>{
+        console.log(resultado);
+    })
 };
 
 // executa functions
@@ -86,3 +99,4 @@ replaceEcma();
 pesquisar();
 pad();
 objectEntries();
+promisses()

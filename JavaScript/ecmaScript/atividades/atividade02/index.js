@@ -16,13 +16,7 @@ var donatello = new personagem(100,150,200,40);
 
 
 function somarVida(vidaRecebida){
-
-    let curar = document.querySelector("#btn-+vida");
-
-        curar = donatello.vida+=vidaRecebida; 
-
-    resultado = document.querySelector("#resultado-vida");
-    resultado.innerHtml=`${curar}`
-
+    let vidaRecebida = document.querySelector("resultado-vida");
+    vidaRecebida += vidaRecebida; 
 
 }
