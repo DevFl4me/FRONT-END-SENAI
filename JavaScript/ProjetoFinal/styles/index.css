@@ -2,3 +2,10 @@
     margin: 0%;
     padding: 0%;
 }
+#table-horario{
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid gray;
+    padding: 10px;
+}
