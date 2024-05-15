@@ -11,7 +11,7 @@
 </head>
 <body class="vh-100 bg-black text-light">
     <header class="heigth-100">
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg bg-danger ">
             <div class="container-fluid">
               <!-- logo e nome -->
               <nav class="navbar bg-body-tertiary">
@@ -31,10 +31,10 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pagamentos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">Horarios</a>
                   </li>
                 </ul>
               </div>
@@ -81,14 +81,17 @@
     <!--  -->
 
     <!-- CARDS -->
-    <main class="container-fluid bg-warning h-75 d-flex gap-4">
+    <main class="container-fluid h-75 d-flex gap-4">
       <div class="card" style="width: 18rem;">
         <img src="posters/avatar.png" class="card-img-top" alt="">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Assentos e horários
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#assentos-filme1">
+            Assentos
+          </button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#horarios-filme1">
+            Horários
           </button>
         </div>
       </div>
@@ -144,40 +147,152 @@
       </div>
     </main>
     <!-- FIM CARDS -->
+
+    <!-- RODAPE -->
     <footer class="container-fluid bg-danger mt-5">
-      aa
+      <div class="container-fluid d-flex justify-content-center align-items-center text-light h-50 w-100">
+        <h2>&copy;CINESENAI</h2>
+      </div>
     </footer>
 
-    <div id="modais">
-        <!-- Modal -->
-        <div class="modal fade modal-fullscreen" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div id="modais-assentos">
+        <!-- Modal Filme 1 -->
+        <div class="modal fade modal-xl" id="assentos-filme1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
-
-              <div class="modal-header">
-                <h1 class="modal-title fs-5 text-black" id="staticBackdropLabel">Assentos e Horários</h1>
+              <div class="modal-header d-flex justify-content-center align-items-center">
+                <h1 class="modal-title fs-5 text-black text-center" id="staticBackdropLabel">Selecione o assento!</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              
-              <div class="modal-body text-black">
-                  <thead id="table-horario">
-                    <tr>
-                      <th>Grupo</th>
-                      <th>Aulas</th>
-                      <th>Horarios</th>
-                    </tr>
-                  </thead>
+              <div class="modal-body text-black bg-secondary">
+                  <section class="container-fluid bg-secondary d-flex flex-column m-0 p-4 h-100">
+                    <!-- Container-Assentos-modal -->
+                    <div class="container-assentos">
+                      <!-- linhas-modal (primeira linha) -->
+                      <div class="row">
+                        <div class="assento" onclick=""></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                      </div>
+                     <!-- linhas-modal (segunda linha) -->
+                     <div class="row">
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                    </div>
+                    <!-- linhas-modal (terceira linha) -->
+                    <div class="row">
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                    </div>
+                    <!-- linhas-modal (quarta linha) -->
+                    <div class="row">
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                    </div>
+                    <!-- linhas-modal (quinta linha) -->
+                    <div class="row">
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                        <div class="assento"></div>
+                    </div>
+                    <section class="container-fluid h-100 d-flex" id="corredor">
+                      <div class="container w-50 h-25 mt-5 bg-secondary d-flex justify-content-center align-items-end">
+                        <h2>TELA CINE</h2>
+                      </div>
+                    </section>
+                    </div>
+                  </section>
+             
               </div>
-
-              <div class="modal-footer">
+              <div class="modal-footer bg-secondary">
                 <button type="button" class="btn btn-secondary bg-danger" data-bs-dismiss="modal">Fechar</button>
                 <button type="button" class="btn btn-primary bg-success">Finalizar Compra</button>
               </div>
             </div>
           </div>
         </div>
+         <!-- Final Modal Filme 1 -->
+
+          <!-- Modal Filme 2 -->
+
+           <!-- Final Modal Filme 2 -->
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script src="script/index.js"></script>
+  </body>
 </html>

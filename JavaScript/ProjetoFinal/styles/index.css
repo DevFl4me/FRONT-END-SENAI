@@ -9,3 +9,36 @@ th,td{
     border: 1px solid gray;
     padding: 10px;
 }
+.container-assentos{
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px 10px black;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(54, 81, 104);
+    
+    
+}
+.row{
+    width: 100%;
+    margin: 0.5px 0px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.assento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50px;
+    height:50px;
+    border-radius:100%;
+    background-color: rgb(167, 167, 197);
+}
+.assento:hover{
+    cursor: pointer;
+    background-color: rgb(120, 158, 175);
+}
