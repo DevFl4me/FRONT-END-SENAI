@@ -11,35 +11,15 @@
 </head>
 <body class="vh-100 bg-black text-light">
     <header class="heigth-100 ">
-        <nav class="navbar navbar-expand-lg bg-danger  ">
-            <div class="container-fluid">
-              <!-- logo e nome -->
-              <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid rounded-circle">
-                  <a class="navbar-brand" href="#">
-                    <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="50" height="24" class="d-inline-block align-text-top">
-                  </a>
-                </div>
-              </nav>
-              <!-- fim logo e nome -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item ">
-                    <a class="nav-link active text-light fs-5" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light fs-5" href="#">Pagamentos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light fs-5" href="#">Horarios</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar bg-danger">
+        <div class="container d-flex justify-content-center align-items-center bg-danger">
+          <a class="navbar-brand m-0 p-0 text-center" href="#">
+            <img src="banners/logo/_b9572a2c-8f52-4621-834c-9c572ff98679 1.png " class="m-0 p-0" alt="Bootstrap" width="100" height="100">
+            <h4 class="m-0 p-0">CineSenai</h4>
+          </a>
+         
+        </div>
+      </nav>
     </header>
     <!-- CARROSEL -->
     <section id="carousel">
@@ -88,7 +68,7 @@
           <h5 class="card-title">AVATAR 2</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <button type="button" class="btn btn-primary bg-danger" data-bs-toggle="modal" data-bs-target="#assentos-filme1">
-            Assentos e horários
+            Assentos 
           </button>
           <button type="button" class="btn btn-primary bg-danger m-2" data-bs-toggle="modal" data-bs-target="#horarios-filme1">
             Horários
@@ -101,7 +81,7 @@
           <h5 class="card-title ">Batman Vs Superman</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <button type="button" class="btn btn-primary bg-danger" data-bs-toggle="modal" data-bs-target="#assentos-filme2">
-            Assentos e horários
+            Assentos 
           </button>
           <button type="button" class="btn btn-primary bg-danger m-2" data-bs-toggle="modal" data-bs-target="#horarios-filme2">
             Horários
@@ -114,7 +94,7 @@
           <h5 class="card-title">Deadpool</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <button type="button" class="btn btn-primary bg-danger" data-bs-toggle="modal" data-bs-target="#assentos-filme3">
-            Assentos e horários
+            Assentos
           </button>
           <button type="button" class="btn btn-primary bg-danger m-2" data-bs-toggle="modal" data-bs-target="#horarios-filme3">
             Horários
@@ -127,7 +107,7 @@
           <h5 class="card-title">Guardiões Das Galaxias</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <button type="button" class="btn btn-primary bg-danger" data-bs-toggle="modal" data-bs-target="#assentos-filme4">
-            Assentos e horários
+            Assentos 
           </button>
           <button type="button" class="btn btn-primary bg-danger m-2" data-bs-toggle="modal" data-bs-target="#horarios-filme4">
             Horários
@@ -140,7 +120,7 @@
           <h5 class="card-title">Pantera Negra</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <button type="button" class="btn btn-primary bg-danger" data-bs-toggle="modal" data-bs-target="#assentos-filme5">
-            Assentos e horários
+            Assentos 
           </button>
           <button type="button" class="btn btn-primary bg-danger m-2" data-bs-toggle="modal" data-bs-target="#horarios-filme5">
             Horários
@@ -153,7 +133,7 @@
           <h5 class="card-title">Star Wars</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <button type="button" class="btn btn-primary bg-danger " data-bs-toggle="modal" data-bs-target="#assentos-filme6">
-            Assentos e horários
+            Assentos 
           </button>
           <button type="button" class="btn btn-primary bg-danger m-2" data-bs-toggle="modal" data-bs-target="#horarios-filme6">
             Horários
@@ -177,6 +157,7 @@
             <div class="modal-content">
               <div class="modal-header d-flex justify-content-center align-items-center bg-secondary">
                 <h1 class="modal-title fs-5 text-black text-center bg-secondary" id="staticBackdropLabel">Selecione o assento!</h1>
+                <p class="fs-5 text-black text-center bg-secondary m-0 p-0">Quantidade Selecionada:<span id="resposta">0</span></p>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body text-black bg-secondary">
@@ -293,7 +274,7 @@
               </div>
               <div class="modal-footer bg-secondary">
                 <button type="button" class="btn btn-secondary bg-danger" data-bs-dismiss="modal">Fechar</button>
-                <button type="button" class="btn btn-primary bg-success">Finalizar Compra</button>
+                <button type="button" class="btn btn-primary bg-danger">Finalizar Compra</button>
               </div>
             </div>
           </div>
@@ -307,53 +288,68 @@
 
     <div id="modais-horarios">
       <!-- Modal Horários -->
-        <div class="modal fade modal-xl text-black" id="horarios-filme1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal fade modal-xl " id="horarios-filme1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
-              <div class="modal-header bg-secondary text-black">
-                <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">Horários</h1>
+              <div class="modal-header bg-secondary ">
+                <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">Cronograma CineSenai</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body bg-secondary text-black">
+              <div class="modal-body bg-secondary  d-flex flex-column justify-content-center align-items-center">
                 <table id="tabela">
-                  <h2 id="atendimento">Horários de atendimento</h2>
+                  <h2 id="atendimento">Horários disponíveis</h2>
                   <tr>
-                      <th id="celula"></th>
-                      <th>SEGUNDA</th>
-                      <th>TERÇA</th>
-                      <th>QUARTA</th>
-                      <th>QUINTA</th>
-                      <th>SEXTA</th>
+                      <th id="celula" class="bg-danger"></th>
+                      <th class="text-danger">SEGUNDA</th>
+                      <th class="text-danger">TERÇA</th>
+                      <th class="text-danger">QUARTA</th>
+                      <th class="text-danger">QUINTA</th>
+                      <th class="text-danger">SEXTA</th>
                   </tr>
                   <tr>
-                      <th>Marcelo</th>
-                      <td>09:00 até as 13:00</td>
-                      <td>08:00 até as 12:00</td>
-                      <td>09:00 até as 12:00</td>
-                      <td>08:00 até as 12:00</td>
-                      <td>09:00 até as 12:00</td>
+                      <th class="text-danger">2D</th>
+                      <td >09:00 até as 13:00</td>
+                      <td >08:00 até as 12:00</td>
+                      <td >09:00 até as 12:00</td>
+                      <td >08:00 até as 12:00</td>
+                      <td >09:00 até as 12:00</td>
                   </tr>
                   <tr>
-                      <th>Daniela</th>
-                      <td>09:00 até as 13:00</td>
-                      <td>08:00 até as 12:00</td>
-                      <td>09:00 até as 12:00</td>
-                      <td>08:00 até as 12:00</td>
-                      <td>09:00 até as 12:00</td>
+                      <th class="text-danger">3D</th>
+                      <td >09:00 até as 13:00</td>
+                      <td >08:00 até as 12:00</td>
+                      <td >09:00 até as 12:00</td>
+                      <td >08:00 até as 12:00</td>
+                      <td >09:00 até as 12:00</td>
                   </tr>
                   <tr>
-                      <th>Jõao</th>
-                      <td>09:00 até as 13:00</td>
-                      <td>08:00 até as 12:00</td>
-                      <td>09:00 até as 12:00</td>
-                      <td>08:00 até as 12:00</td>
-                      <td>09:00 até as 12:00</td>
+                      <th class="text-danger">Dub</th>
+                      <td >09:00 até as 13:00</td>
+                      <td >08:00 até as 12:00</td>
+                      <td >09:00 até as 12:00</td>
+                      <td >08:00 até as 12:00</td>
+                      <td >09:00 até as 12:00</td>
                   </tr>
+                  <tr>
+                    <th class="text-danger">Max</th>
+                    <td >09:00 até as 13:00</td>
+                    <td >08:00 até as 12:00</td>
+                    <td >09:00 até as 12:00</td>
+                    <td >08:00 até as 12:00</td>
+                    <td >09:00 até as 12:00</td>
+                </tr>
+                <tr>
+                  <th class="text-danger">IPlus</th>
+                  <td >09:00 até as 13:00</td>
+                  <td >08:00 até as 12:00</td>
+                  <td >09:00 até as 12:00</td>
+                  <td >08:00 até as 12:00</td>
+                  <td >09:00 até as 12:00</td>
+              </tr>
               </table>
               </div>
               <div class="modal-footer bg-secondary">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Understood</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
               </div>
             </div>
           </div>

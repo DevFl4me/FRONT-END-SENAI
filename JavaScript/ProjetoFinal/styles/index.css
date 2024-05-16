@@ -55,8 +55,41 @@ th,td{
     font-size: 20px;
     transition: 0.5s;
 }
+.btn-secondary{
+    border:none;
+    background-color: rgb(0, 0, 0)!important;
+}
+.btn-secondary:hover{
+    background-color: rgba(240, 248, 255, 0)!important;
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    transition: 0.5s;
+}
+.btn-secondary::before{
+    font-size: 20px;
+    transition: 0.5;
+}
 
 .assento.selected {
     background-color: #f436368f; /* Vermelho para assentos selecionados */
     cursor: not-allowed;
+}
+/*  */
+#table tr,th,td{
+    border-color:aliceblue ;
+    border: 3px solid rgb(0, 0, 0);
+}
+.modal-body{
+    box-shadow: 2px 20px 40px 2px rgba(0, 0, 0, 0.363);
+}
+#celular{
+    background-color: red;
+}
+td:hover{
+    cursor: pointer;
+    background-color: rgb(128, 52, 52);
+}
+tr:hover{
+    cursor: pointer;
+    background-color: rgb(128, 52, 52);
 }
