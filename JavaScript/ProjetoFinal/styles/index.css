@@ -56,6 +56,7 @@ th,td{
     transition: 0.5s;
 }
 
-.assentoSelecionado {
-    background-color: yellow;
+.assento.selected {
+    background-color: #f436368f; /* Vermelho para assentos selecionados */
+    cursor: not-allowed;
 }
