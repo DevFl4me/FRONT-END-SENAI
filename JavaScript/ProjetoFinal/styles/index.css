@@ -93,3 +93,22 @@ tr:hover{
     cursor: pointer;
     background-color: rgb(128, 52, 52);
 }
+/* PAGAMENTOS */
+#title-pagamento{
+    border-radius: 20px;
+}
+
+#detalhes-pagamento{
+    border-radius: 20px;
+}
+
+#title-pagamento:hover{
+    cursor: pointer;
+    color: red;
+    background-color: antiquewhite!important;
+}
+#detalhes-pagamento:hover{
+    cursor: pointer;
+    color: red;
+    background-color: antiquewhite!important;
+}
