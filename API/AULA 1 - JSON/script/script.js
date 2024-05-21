@@ -1,11 +1,11 @@
 const resposta = document.querySelector("#resposta");
 
-// fetch(`dados.json`).then((response) =>{
-//     response.json().then((dados) => {
-//        resposta.innerHTML = carros
-//        return carros.json()
-//     })
-// })
+fetch(`http://127.0.0.1:5500/API/AULA%201%20-%20JSON/`).then((response) =>{
+    response.json().then((dados) => {
+       resposta.innerHTML = carros
+       return carros.json()
+    })
+})
 
 var cep = document.querySelector("#cep");
 
